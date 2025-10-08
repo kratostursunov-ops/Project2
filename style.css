@@ -1,0 +1,294 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f2eadf;
+  color: #222;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background: transparent;
+  padding: 20px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2a21;
+}
+
+.nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #6b4b3a;
+  font-weight: 500;
+}
+
+.btn {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: #2b8a66;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #236d52;
+}
+
+/* Hero Section */
+.hero {
+  padding: 50px 0;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-left h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.lead {
+  color: #5b4b42;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-img-wrap {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.hero-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Collection */
+.collection {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-body h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.muted {
+  color: #6a5c52;
+  font-size: 14px;
+}
+
+/* Footer */
+.site-footer {
+  padding: 25px 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  text-align: center;
+  color: #6b5a4e;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img-wrap {
+    width: 100%;
+    height: 220px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.header {
+  background-color: #f5e1c0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5e1c0; /* фон как на макете */
+  padding: 40px 0;
+}
+
+.logo-above img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.hero-image img {
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+/* --- Стили для секции Footer --- */
+
+/* Основной фон футера */
+.main-footer {
+    background-color: #2C343E; /* Темно-серый цвет из дизайна */
+    padding: 45px 0; /* Внутренний отступ сверху/снизу */
+}
+
+/* Контейнер для выравнивания содержимого по горизонтали */
+.footer-content {
+    max-width: 1110px; /* Ширина контента, как на макете */
+    margin: 0 auto; /* Центрирование блока */
+    display: flex;
+    justify-content: space-between; /* Распределение элементов по краям */
+    align-items: center; /* Выравнивание элементов по центру по вертикали */
+    padding: 0 24px; /* Горизонтальные отступы для небольших экранов */
+}
+
+/* Навигационные ссылки */
+.footer-nav a {
+    color: #728cb1; /* Серый цвет текста */
+    text-decoration: none;
+    text-transform: uppercase;
+    /* Убедитесь, что шрифт 'Barlow' подключен в вашем проекте */
+    font-family: 'Barlow', sans-serif; 
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.92px; /* Расстояние между буквами */
+    margin-right: 32px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:last-child {
+    margin-right: 0; /* Убираем отступ у последнего элемента */
+}
+
+.footer-nav a:hover {
+    color: white; /* Эффект при наведении */
+}
+
+/* Иконки социальных сетей */
+.social-links a {
+    margin-left: 24px; /* Отступ между иконками */
+    color: aqua;
+}
+
+.social-links img {
+    width: 24px; /* Размер иконки */
+    height: 24px;
+    /* Если ваши иконки SVG, возможно, потребуется добавить стили для изменения цвета при наведении */
+}
+
+
+/* --- Медиа-запрос для планшетов и мобильных устройств (адаптивность) --- */
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Элементы располагаются вертикально */
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 32px;
+    }
+
+    .footer-nav {
+        margin-bottom: 48px;
+        /* Убираем лишнее пространство, которое может появиться */
+        display: flex; 
+        flex-direction: column;
+        gap: 12px; /* Расстояние между ссылками в вертикальном режиме */
+    }
+
+    .footer-nav a {
+        margin-right: 0; /* Сброс горизонтального отступа */
+    }
+
+    .social-links {
+        margin-top: 32px; 
+    }
+}
